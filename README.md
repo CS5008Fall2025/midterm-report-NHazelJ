@@ -2,8 +2,8 @@
 # Midterm p1: Report on Analysis of Fibonacci  Series
 * **Author**: 
 * **GitHub Repo**: [linke to github repo with this report]
-* **Semester**:
-* **Languages Used**: c, update
+* **Semester**: Fall 2025
+* **Languages Used**: c, python
 
 > You are free to rename/ modify these sections as you need (and don't forget to remove this line..)
 
