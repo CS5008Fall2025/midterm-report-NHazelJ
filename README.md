@@ -48,7 +48,8 @@ int fibonacci_recursive(int n) {
     return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2);
 }
 ```
-The Dynamic version using memoization of the fibonacci in pseudocode in C and pyhon
+The Dynamic version using memoization of the fibonacci in pseudocode in C and pyhon.  
+In the memoized implementation, each Fibonacci value is computed only once and then reused. This reduces redundant calls, giving $O(n)$ time and $O(n)$ space complexity for storing the memoized results and recursion stack. [3][4][7]
 ```text
 int memo[1000];
 
@@ -63,8 +64,6 @@ int fibonacci_dp(int n) {
     return memo[n];
 }
 ```
-In the memoized implementation, each Fibonacci value is computed only once and then reused. This reduces redundant calls, giving $O(n)$ time and $O(n)$ space complexity for storing the memoized results and recursion stack. [3][4][7]
-
 The iterative implementation of Fibonacci uses a for loop. It starts with 0 and 1, adds them together to get the next number, and then does the same thing over and over to make more numbers. The algorithm is well known and works very effectively because the loop only runs once for each phrase and only a few variables are saved. [1]
 
 To figure out each, the recursive form of the Fibonacci algorithm calls itself twice: once for F(n-1) and once for F(n-2). The first two values are 0 and 1, and each time the function calls itself, it adds to those to get the next value. This method is easy to understand, but it's also the slowest because it does a lot of the same math again and over. It takes O(n) space because of the recursion stack and $O(2^n)$ time because of the exponential time complexity.[1]
